@@ -1,0 +1,12 @@
+{
+  "bin": {
+    "repo": "bin/stack-a.js"
+  },
+  "scripts": {
+    "cdk": "cdk"
+  },
+  "dependencies": {
+    "@aws-cdk/core": "1.105.0",
+    "aws-cdk": "1.105.0"
+  }
+}
