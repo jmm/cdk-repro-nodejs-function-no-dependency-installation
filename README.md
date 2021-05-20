@@ -1,12 +1,14 @@
-# Welcome to your CDK JavaScript project!
+# Repro
 
-This is a blank project for JavaScript development with CDK.
+```
+npm install
+npm run cdk synth StackA
+```
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app. The build step is not required when using JavaScript.
+# Expected Result
 
-## Useful commands
+Synthesis succeeds.
 
- * `npm run test`         perform the jest unit tests
- * `cdk deploy`           deploy this stack to your default AWS account/region
- * `cdk diff`             compare deployed stack with current state
- * `cdk synth`            emits the synthesized CloudFormation template
+# Actual Result
+
+Synthesis fails because dependencies of the NodejsFunction aren't installed.
